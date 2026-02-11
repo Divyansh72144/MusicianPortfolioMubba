@@ -19,7 +19,9 @@ const Header = () => {
       <div className="content-wrapper">
         <div className="navbar">
           <div className="logo">
-            <Link to="/" className="logo-link">Marcus Miller</Link>
+            <Link to="/" className="logo-link">
+              <div className="logo-main">Marcus Miller</div>
+            </Link>
           </div>
           <nav className="nav-menu">
             <ul className="menu">

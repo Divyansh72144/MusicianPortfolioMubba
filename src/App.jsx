@@ -5,12 +5,17 @@ import HeroSection from './components/HeroSection'
 import TourSection from './components/TourSection'
 import NewsletterSection from './components/NewsletterSection'
 import Footer from './components/Footer'
+import PageHero from './components/PageHero'
 
 // Placeholder components for other pages
 const HomePage = () => (
   <div className="App">
     <Header />
     <main>
+      <PageHero
+        title=""
+        backgroundImage="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=1920&q=80"
+      />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h1>Welcome to Marcus Miller's Official Site</h1>
       </section>
@@ -23,6 +28,10 @@ const AboutPage = () => (
   <div className="App">
     <Header />
     <main>
+      <PageHero
+        title="ABOUT"
+        backgroundImage="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=80"
+      />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h1>About Marcus Miller</h1>
         <p>Coming soon...</p>
@@ -36,6 +45,10 @@ const GearPage = () => (
   <div className="App">
     <Header />
     <main>
+      <PageHero
+        title="MARCUS' GEAR"
+        backgroundImage="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1920&q=80"
+      />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h1>Marcus' Gear</h1>
         <p>Coming soon...</p>
@@ -49,6 +62,10 @@ const CruisesPage = () => (
   <div className="App">
     <Header />
     <main>
+      <PageHero
+        title="JAZZ CRUISES"
+        backgroundImage="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80"
+      />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h1>Jazz Cruises</h1>
         <p>Coming soon...</p>
@@ -75,7 +92,10 @@ const TourPage = () => (
   <div className="App">
     <Header />
     <main>
-      <HeroSection />
+      <PageHero
+        title="TOUR"
+        backgroundImage="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1920&q=80"
+      />
       <TourSection />
       <NewsletterSection />
       <Footer />
