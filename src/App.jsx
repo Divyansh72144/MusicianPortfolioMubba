@@ -15,10 +15,8 @@ const HomePage = () => (
       <PageHero
         title=""
         backgroundImage="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=1920&q=80"
+        showHomeInfo={true}
       />
-      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Welcome to Marcus Miller's Official Site</h1>
-      </section>
       <Footer />
     </main>
   </div>
