@@ -1,34 +1,38 @@
 import React from 'react'
+import { Link, useLocation } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
+  const location = useLocation()
+
+  const navItems = [
+    { name: 'HOME', href: '/' },
+    { name: 'TOUR', href: '/tour' },
+    { name: 'ABOUT', href: '/about' },
+    { name: "MARCUS' GEAR", href: '/gear' },
+    { name: 'JAZZ CRUISES', href: '/cruises' },
+    { name: 'CONTACT', href: '/contact' }
+  ]
+
   return (
     <header className="header">
       <div className="content-wrapper">
         <div className="navbar">
           <div className="logo">
-            <a href="/" className="logo-link">Marcus Miller</a>
+            <Link to="/" className="logo-link">Marcus Miller</Link>
           </div>
           <nav className="nav-menu">
             <ul className="menu">
-              <li className="menu-item">
-                <a href="/" className="menu-link">HOME</a>
-              </li>
-              <li className="menu-item">
-                <a href="/tour" className="menu-link active">TOUR</a>
-              </li>
-              <li className="menu-item">
-                <a href="/about" className="menu-link">ABOUT</a>
-              </li>
-              <li className="menu-item">
-                <a href="/gear" className="menu-link">MARCUS' GEAR</a>
-              </li>
-              <li className="menu-item">
-                <a href="/cruises" className="menu-link">JAZZ CRUISES</a>
-              </li>
-              <li className="menu-item">
-                <a href="/contact" className="menu-link">CONTACT</a>
-              </li>
+              {navItems.map((item) => (
+                <li key={item.href} className="menu-item">
+                  <Link
+                    to={item.href}
+                    className={`menu-link ${location.pathname === item.href ? 'active' : ''}`}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
