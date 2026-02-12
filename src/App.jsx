@@ -10,6 +10,11 @@ import HomeContent from './components/HomeContent'
 import ContactPage from './components/ContactPage'
 import AboutPage from './components/AboutPage'
 
+// Import images
+import mubbaHome from './images/mubbaHome.jpg'
+import MubbaAbout from './images/MubbaAbout.jpg'
+import MubbaGear from './images/MubbaGear.jpg'
+
 // Placeholder components for other pages
 const HomePage = () => (
   <div className="App">
@@ -17,7 +22,7 @@ const HomePage = () => (
     <main>
       <PageHero
         title=""
-        backgroundImage="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=1920&q=80"
+        backgroundImage={mubbaHome}
         showHomeInfo={true}
       />
       <HomeContent />
@@ -33,7 +38,7 @@ const About = () => (
     <main>
       <PageHero
         title="ABOUT"
-        backgroundImage="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=80"
+        backgroundImage={MubbaAbout}
       />
       <AboutPage />
       <NewsletterSection />
@@ -48,7 +53,7 @@ const GearPage = () => (
     <main>
       <PageHero
         title="MARCUS' GEAR"
-        backgroundImage="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1920&q=80"
+        backgroundImage={MubbaGear}
       />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
         <h1>Marcus' Gear</h1>
