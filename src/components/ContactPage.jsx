@@ -2,51 +2,22 @@ import React from 'react'
 import './ContactPage.css'
 
 const ContactPage = () => {
-  const bookingContacts = [
-    {
-      region: 'North America',
-      name: 'UTA (United Talent Agency)',
-      email: 'bookings@unitedtalent.com',
-      phone: '+1 (310) 273-6700'
-    },
-    {
-      region: 'Europe',
-      name: 'Earth Agency',
-      email: 'europe@earthagency.com',
-      phone: '+44 20 7841 4400'
-    },
-    {
-      region: 'Asia & Pacific',
-      name: 'AEG Presents Asia',
-      email: 'asia@aegpresents.com',
-      phone: '+81 3 6434 8800'
-    },
-    {
-      region: 'South America',
-      name: 'Move Concerts',
-      email: 'latam@moveconcerts.com',
-      phone: '+55 11 3051 9700'
-    }
-  ]
+  const contactInfo = {
+    name: 'Humphrey Mbaruku (Mubba)',
+    phone: '+358 40 850 1301',
+    email: 'contact@mubba.com'
+  }
 
-  const managementContacts = [
+  const socialLinks = [
     {
-      title: 'General Management',
-      name: 'Mark G. Miller',
-      email: 'mgmt@marcusmiller.com',
-      phone: '+1 (212) 555-0123'
+      name: 'Instagram',
+      url: 'https://www.instagram.com/humphrey_mubba?igsh=eTlmeHRyNGptb2pk&utm_source=qr',
+      handle: '@humphrey_mubba'
     },
     {
-      title: 'Press & Media Inquiries',
-      name: 'Davis & Associates PR',
-      email: 'press@marcusmiller.com',
-      phone: '+1 (323) 555-0456'
-    },
-    {
-      title: 'Licensing & Sync',
-      name: 'Sony Music Publishing',
-      email: 'licensing@sonypub.com',
-      phone: '+1 (212) 833-8000'
+      name: 'YouTube',
+      url: 'https://youtube.com/@mubba1577?si=hygIyNF3x0iPPOn6',
+      handle: '@mubba1577'
     }
   ]
 
@@ -57,44 +28,50 @@ const ContactPage = () => {
         <div className="contact-image">
           <img
             src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=900&fit=crop"
-            alt="Marcus Miller"
+            alt="Mubba"
           />
         </div>
 
         {/* Right - Contact Info */}
         <div className="contact-info">
-          <h2 className="contact-title">Contact</h2>
+          <h2 className="contact-title">Get in Touch</h2>
+          <p className="contact-subtitle">{contactInfo.name}</p>
 
-          {/* Booking by Region */}
+          {/* Direct Contact */}
           <div className="contact-block">
-            <h3 className="contact-block-title">Booking by Region</h3>
-            <div className="contact-grid">
-              {bookingContacts.map((contact, index) => (
-                <div key={index} className="contact-card">
-                  <h4 className="contact-region">{contact.region}</h4>
-                  <p className="contact-name">{contact.name}</p>
-                  <a href={`mailto:${contact.email}`} className="contact-email">
-                    {contact.email}
-                  </a>
-                  <p className="contact-phone">{contact.phone}</p>
-                </div>
-              ))}
+            <h3 className="contact-block-title">Contact Information</h3>
+            <div className="contact-details">
+              <div className="contact-detail-item">
+                <span className="contact-label">Phone</span>
+                <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="contact-value">
+                  {contactInfo.phone}
+                </a>
+              </div>
+              <div className="contact-detail-item">
+                <span className="contact-label">Email</span>
+                <a href={`mailto:${contactInfo.email}`} className="contact-value">
+                  {contactInfo.email}
+                </a>
+              </div>
             </div>
           </div>
 
-          {/* Artist Management */}
+          {/* Social Media */}
           <div className="contact-block">
-            <h3 className="contact-block-title">Artist Management</h3>
-            <div className="contact-grid management-grid">
-              {managementContacts.map((contact, index) => (
-                <div key={index} className="contact-card">
-                  <h4 className="contact-region">{contact.title}</h4>
-                  <p className="contact-name">{contact.name}</p>
-                  <a href={`mailto:${contact.email}`} className="contact-email">
-                    {contact.email}
-                  </a>
-                  <p className="contact-phone">{contact.phone}</p>
-                </div>
+            <h3 className="contact-block-title">Follow Mubba</h3>
+            <div className="contact-grid social-grid">
+              {socialLinks.map((social, index) => (
+                <a
+                  key={index}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="social-card"
+                >
+                  <h4 className="social-name">{social.name}</h4>
+                  <p className="social-handle">{social.handle}</p>
+                  <span className="social-arrow">→</span>
+                </a>
               ))}
             </div>
           </div>

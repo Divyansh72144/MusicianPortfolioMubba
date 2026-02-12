@@ -10,19 +10,39 @@ const AboutPage = () => {
 
           <div className="about-text">
             <p>
-              Marcus Miller is a legendary bassist, composer, and producer whose influence on modern jazz, R&B, and fusion spans over four decades. Born in Brooklyn, New York in 1959, Miller displayed exceptional musical talent from an early age, mastering multiple instruments including bass guitar, saxophone, keyboards, and clarinet.
+              Mubba (born Humphrey Mbaruku) is a jazz bassist, songwriter and composer from Tanzania living in Finland.
             </p>
 
             <p>
-              His breakthrough came in the late 1970s when he began working with Miles Davis, contributing to some of the jazz legend's most celebrated albums including "Tutu," which Miller composed and produced. This collaboration showcased Miller's unique ability to blend jazz with contemporary sounds, establishing him as a visionary force in music.
+              Since his beginnings, both traditional jazz and African music form an important part of his life. He has been inspired by artists such as Richard Bona, Étienne M'Bapé, Marcus Miller, Tatu N'gane, Jimmy Dludlu, Jonathan Butler, Hugh Masékela, among other greats. Due to these varieties and legendary experience and exposure, his music connects with audiences from different cultures around Africa and other corners of the world as well.
             </p>
 
             <p>
-              Throughout his illustrious career, Miller has worked with an extraordinary roster of artists including Luther Vandross, David Sanborn, Herbie Hancock, Chaka Khan, Aretha Franklin, and Elton John. His distinctive slap-bass technique and melodic approach have made him one of the most influential bassists in music history, inspiring generations of musicians worldwide.
+              His music fuses African (Tanzania) rhythm and melodies with the spontaneity freedom of jazz improvisation, resistance and movement that ignites the body and awakens the mind. He has one album called Time which highlights the music that he is doing, it is in all digital platforms.
             </p>
 
             <p>
-              As a solo artist, Miller has released numerous acclaimed albums and earned two Grammy Awards. His 2018 album "Laid Black" received a Grammy nomination for Best Contemporary Instrumental Album. Beyond performing, he continues to compose, produce, and mentor emerging artists while headlining major jazz festivals and venues around the world.
+              He has a band called The Afro-Ryan which comprises musicians from TANZANIA, CHILE, ITALY, and FINLAND.
+            </p>
+
+            <p>
+              He has done an African tour in 2025 which was sponsored by Goethe Institute on African countries like Ivory Coast, Kenya, Angola, Congo and etc.
+            </p>
+
+            <p>
+              He has played on Sauti za Busara 2024 in Zanzibar.
+            </p>
+
+            <p>
+              He has performed on Bc international jazz festival in Kenya 2024.
+            </p>
+
+            <p>
+              He performed on Evergreen Jazz festival in Tanzania.
+            </p>
+
+            <p>
+              He is now working on his second album called Echos from the West.
             </p>
           </div>
 

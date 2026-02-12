@@ -1,12 +1,29 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './PageHero.css'
 
 const PageHero = ({ title, backgroundImage, showHomeInfo }) => {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  useEffect(() => {
+    const img = new Image()
+    img.src = backgroundImage
+    img.onload = () => setImageLoaded(true)
+
+    // If already cached
+    if (img.complete) {
+      setImageLoaded(true)
+    }
+  }, [backgroundImage])
+
   return (
-    <section
-      className="page-hero"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
+    <section className="page-hero">
+      <img
+        src={backgroundImage}
+        alt={title || "Hero background"}
+        className={`page-hero-image ${imageLoaded ? 'loaded' : ''}`}
+        fetchPriority="high"
+        style={{ display: imageLoaded ? 'block' : 'none' }}
+      />
       <div className="page-hero-overlay">
         {showHomeInfo ? (
           <div className="content-wrapper">

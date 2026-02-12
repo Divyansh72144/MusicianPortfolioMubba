@@ -12,11 +12,23 @@ import AboutPage from './components/AboutPage'
 import ShopHero from './components/ShopHero'
 import ShopPage from './components/ShopPage'
 
-// Import images
-import mubbaHome from './images/mubbaHome.jpg'
-import MubbaAbout from './images/MubbaAbout.jpg'
-import MubbaGear from './images/MubbaGear.jpg'
-import mubbaTour from './images/mubbaTour.jpg'
+// Import optimized WebP images (96% smaller!)
+import mubbaHome from './images/mubbaHome.webp'
+import MubbaAbout from './images/MubbaAbout.webp'
+import MubbaGear from './images/MubbaGear.webp'
+import mubbaTour from './images/mubbaTour.webp'
+
+// Hidden preloader component - keeps images in DOM cache
+const ImagePreloader = () => {
+  return (
+    <div style={{ display: 'none' }}>
+      <img src={mubbaHome} alt="" fetchPriority="high" />
+      <img src={MubbaAbout} alt="" fetchPriority="high" />
+      <img src={MubbaGear} alt="" fetchPriority="high" />
+      <img src={mubbaTour} alt="" fetchPriority="high" />
+    </div>
+  )
+}
 
 // Placeholder components for other pages
 const HomePage = () => (
@@ -108,14 +120,17 @@ const TourPage = () => (
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-      <Route path="/tour" element={<TourPage />} />
-      <Route path="/about" element={<About />} />
-      <Route path="/gear" element={<GearPage />} />
-      <Route path="/shop" element={<Shop />} />
-      <Route path="/contact" element={<Contact />} />
-    </Routes>
+    <>
+      <ImagePreloader />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/tour" element={<TourPage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/gear" element={<GearPage />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   )
 }
 

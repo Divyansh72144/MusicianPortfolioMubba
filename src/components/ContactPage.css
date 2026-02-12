@@ -41,9 +41,47 @@
   letter-spacing: 4px;
   text-transform: uppercase;
   color: #FFFFFF;
-  margin: 0 0 40px;
-  padding-bottom: 20px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  margin: 0 0 10px;
+}
+
+.contact-subtitle {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 20px;
+  color: #FFD700;
+  margin: 0 0 30px;
+  letter-spacing: 1px;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-label {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 14px;
+  color: #888888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-value {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-value:hover {
+  color: #FFD700;
 }
 
 .contact-block {
@@ -122,6 +160,60 @@
   margin: 0;
 }
 
+/* Social Grid */
+.social-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.social-card {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.social-card:hover {
+  background-color: rgba(255, 215, 0, 0.1);
+  border-color: #FFD700;
+  transform: translateY(-4px);
+}
+
+.social-name {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+.social-handle {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 14px;
+  color: #AAAAAA;
+  margin: 0;
+}
+
+.social-arrow {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: #FFD700;
+  transition: transform 0.3s ease;
+}
+
+.social-card:hover .social-arrow {
+  transform: translateX(8px);
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
   .management-grid {
@@ -158,10 +250,20 @@
   .contact-title {
     font-size: 36px;
     letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+
+  .contact-subtitle {
+    font-size: 16px;
+  }
+
+  .contact-value {
+    font-size: 20px;
   }
 
   .contact-grid,
-  .management-grid {
+  .management-grid,
+  .social-grid {
     grid-template-columns: 1fr;
   }
 
