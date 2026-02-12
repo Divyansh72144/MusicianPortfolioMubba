@@ -11,7 +11,7 @@ const Header = () => {
     { name: 'TOUR', href: '/tour' },
     { name: 'ABOUT', href: '/about' },
     { name: "MARCUS' GEAR", href: '/gear' },
-    { name: 'JAZZ CRUISES', href: '/cruises' },
+    { name: 'SHOP', href: '/shop' },
     { name: 'CONTACT', href: '/contact' }
   ]
 

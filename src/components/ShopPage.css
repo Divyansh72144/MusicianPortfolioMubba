@@ -1,0 +1,169 @@
+.shop-page {
+  background-color: #000000;
+  padding: 80px 0;
+}
+
+.shop-page .content-wrapper {
+  max-width: 1400px;
+}
+
+.shop-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.shop-section-title {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0 0 20px;
+}
+
+.shop-description {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 16px;
+  color: #AAAAAA;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.merchandise-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.merchandise-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.merchandise-image {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  overflow: hidden;
+}
+
+.merchandise-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.merchandise-card:hover .merchandise-image img {
+  transform: scale(1.05);
+}
+
+.merchandise-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #FFD700;
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.merchandise-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+}
+
+.merchandise-name {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin: 0 0 10px;
+  line-height: 1.3;
+}
+
+.merchandise-price {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFD700;
+  margin: 0 0 auto;
+}
+
+.add-to-cart-btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+@media (max-width: 1200px) {
+  .shop-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .shop-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .shop-page {
+    padding: 50px 0;
+  }
+
+  .shop-section-title {
+    font-size: 28px;
+  }
+
+  .shop-grid {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shop-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shop-section-title {
+    font-size: 24px;
+  }
+}

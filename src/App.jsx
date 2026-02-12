@@ -9,11 +9,14 @@ import PageHero from './components/PageHero'
 import HomeContent from './components/HomeContent'
 import ContactPage from './components/ContactPage'
 import AboutPage from './components/AboutPage'
+import ShopHero from './components/ShopHero'
+import ShopPage from './components/ShopPage'
 
 // Import images
 import mubbaHome from './images/mubbaHome.jpg'
 import MubbaAbout from './images/MubbaAbout.jpg'
 import MubbaGear from './images/MubbaGear.jpg'
+import mubbaTour from './images/mubbaTour.jpg'
 
 // Placeholder components for other pages
 const HomePage = () => (
@@ -65,18 +68,12 @@ const GearPage = () => (
   </div>
 )
 
-const CruisesPage = () => (
+const Shop = () => (
   <div className="App">
     <Header />
     <main>
-      <PageHero
-        title="JAZZ CRUISES"
-        backgroundImage="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1920&q=80"
-      />
-      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Jazz Cruises</h1>
-        <p>Coming soon...</p>
-      </section>
+      <ShopHero title="SHOP" />
+      <ShopPage />
       <NewsletterSection />
       <Footer />
     </main>
@@ -100,7 +97,7 @@ const TourPage = () => (
     <main>
       <PageHero
         title="TOUR"
-        backgroundImage="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=1920&q=80"
+        backgroundImage={mubbaTour}
       />
       <TourSection />
       <NewsletterSection />
@@ -116,7 +113,7 @@ function App() {
       <Route path="/tour" element={<TourPage />} />
       <Route path="/about" element={<About />} />
       <Route path="/gear" element={<GearPage />} />
-      <Route path="/cruises" element={<CruisesPage />} />
+      <Route path="/shop" element={<Shop />} />
       <Route path="/contact" element={<Contact />} />
     </Routes>
   )
