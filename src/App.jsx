@@ -6,6 +6,9 @@ import TourSection from './components/TourSection'
 import NewsletterSection from './components/NewsletterSection'
 import Footer from './components/Footer'
 import PageHero from './components/PageHero'
+import HomeContent from './components/HomeContent'
+import ContactPage from './components/ContactPage'
+import AboutPage from './components/AboutPage'
 
 // Placeholder components for other pages
 const HomePage = () => (
@@ -17,12 +20,14 @@ const HomePage = () => (
         backgroundImage="https://images.unsplash.com/photo-1511192336575-5a79af67a629?w=1920&q=80"
         showHomeInfo={true}
       />
+      <HomeContent />
+      <NewsletterSection />
       <Footer />
     </main>
   </div>
 )
 
-const AboutPage = () => (
+const About = () => (
   <div className="App">
     <Header />
     <main>
@@ -30,10 +35,8 @@ const AboutPage = () => (
         title="ABOUT"
         backgroundImage="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1920&q=80"
       />
-      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>About Marcus Miller</h1>
-        <p>Coming soon...</p>
-      </section>
+      <AboutPage />
+      <NewsletterSection />
       <Footer />
     </main>
   </div>
@@ -51,6 +54,7 @@ const GearPage = () => (
         <h1>Marcus' Gear</h1>
         <p>Coming soon...</p>
       </section>
+      <NewsletterSection />
       <Footer />
     </main>
   </div>
@@ -68,19 +72,18 @@ const CruisesPage = () => (
         <h1>Jazz Cruises</h1>
         <p>Coming soon...</p>
       </section>
+      <NewsletterSection />
       <Footer />
     </main>
   </div>
 )
 
-const ContactPage = () => (
+const Contact = () => (
   <div className="App">
     <Header />
     <main>
-      <section style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Contact</h1>
-        <p>Coming soon...</p>
-      </section>
+      <ContactPage />
+      <NewsletterSection />
       <Footer />
     </main>
   </div>
@@ -106,10 +109,10 @@ function App() {
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/tour" element={<TourPage />} />
-      <Route path="/about" element={<AboutPage />} />
+      <Route path="/about" element={<About />} />
       <Route path="/gear" element={<GearPage />} />
       <Route path="/cruises" element={<CruisesPage />} />
-      <Route path="/contact" element={<ContactPage />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   )
 }
