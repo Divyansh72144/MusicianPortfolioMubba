@@ -67,11 +67,11 @@ const GearPage = () => (
     <Header />
     <main>
       <PageHero
-        title="MARCUS' GEAR"
+        title="MUBBA'S GEAR"
         backgroundImage={MubbaGear}
       />
       <section style={{ padding: '100px 20px', textAlign: 'center' }}>
-        <h1>Marcus' Gear</h1>
+        <h1>Mubba's Gear</h1>
         <p>Coming soon...</p>
       </section>
       <NewsletterSection />

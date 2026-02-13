@@ -10,7 +10,7 @@ const Header = () => {
     { name: 'HOME', href: '/' },
     { name: 'TOUR', href: '/tour' },
     { name: 'ABOUT', href: '/about' },
-    { name: "MARCUS' GEAR", href: '/gear' },
+    { name: "MUBBA'S GEAR", href: '/gear' },
     { name: 'SHOP', href: '/shop' },
     { name: 'CONTACT', href: '/contact' }
   ]
@@ -29,7 +29,7 @@ const Header = () => {
         <div className="navbar">
           <div className="logo">
             <Link to="/" className="logo-link" onClick={closeMenu}>
-              <div className="logo-main">Marcus Miller</div>
+              <div className="logo-main">HUMPHREY MUBBA</div>
             </Link>
           </div>
           <button

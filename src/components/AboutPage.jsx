@@ -6,7 +6,7 @@ const AboutPage = () => {
     <section className="about-section">
       <div className="about-container">
         <div className="about-content">
-          <h2 className="about-title">About Marcus Miller</h2>
+          <h2 className="about-title">About Humphrey Mubba</h2>
 
           <div className="about-text">
             <p>
@@ -49,26 +49,26 @@ const AboutPage = () => {
           <div className="about-image">
             <img
               src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&q=80"
-              alt="Marcus Miller performing live"
+              alt="Mubba performing live"
             />
           </div>
 
           <div className="about-highlights">
             <div className="highlight-item">
-              <span className="highlight-number">2x</span>
-              <span className="highlight-text">Grammy Winner</span>
+              <span className="highlight-number">2025</span>
+              <span className="highlight-text">African Tour</span>
             </div>
             <div className="highlight-item">
-              <span className="highlight-number">40+</span>
-              <span className="highlight-text">Years in Music</span>
+              <span className="highlight-number">2024</span>
+              <span className="highlight-text">Sauti za Busara</span>
             </div>
             <div className="highlight-item">
-              <span className="highlight-number">500+</span>
-              <span className="highlight-text">Album Credits</span>
+              <span className="highlight-number">4</span>
+              <span className="highlight-text">Band Countries</span>
             </div>
             <div className="highlight-item">
-              <span className="highlight-number">∞</span>
-              <span className="highlight-text">Inspiration</span>
+              <span className="highlight-number">2</span>
+              <span className="highlight-text">Albums</span>
             </div>
           </div>
         </div>

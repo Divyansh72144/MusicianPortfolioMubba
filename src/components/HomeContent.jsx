@@ -13,7 +13,7 @@ const HomeContent = () => {
               We are reFRESHING our website. Thanks for your patience. Please check back soon
             </p>
             <p className="announcement-highlight">
-              We are proud to announce that Laid Black has been nominated for a Grammy for Best Contemporary Instrumental Album!
+              New album "Echos from the West" coming soon!
             </p>
           </div>
         </div>

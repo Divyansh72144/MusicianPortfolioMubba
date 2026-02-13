@@ -5,21 +5,21 @@ const ShopPage = () => {
   const merchandise = [
     {
       id: 1,
-      name: 'Laid Black Vinyl',
+      name: 'Time Album Vinyl',
       price: '$35.00',
       image: 'https://images.unsplash.com/photo-1539375665275-f9de415ef9ac?w=400&h=400&fit=crop',
       category: 'Music'
     },
     {
       id: 2,
-      name: 'Marcus Miller Signature T-Shirt',
+      name: 'Mubba Signature T-Shirt',
       price: '$30.00',
       image: 'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop',
       category: 'Apparel'
     },
     {
       id: 3,
-      name: 'Afrodeezia CD',
+      name: 'Echos from the West CD',
       price: '$15.00',
       image: 'https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=400&h=400&fit=crop',
       category: 'Music'
@@ -54,7 +54,7 @@ const ShopPage = () => {
     },
     {
       id: 8,
-      name: 'Marcus Miller Mug',
+      name: 'Mubba Mug',
       price: '$18.00',
       image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?w=400&h=400&fit=crop',
       category: 'Accessories'
@@ -67,7 +67,7 @@ const ShopPage = () => {
         <div className="shop-intro">
           <h2 className="shop-section-title">Official Merchandise</h2>
           <p className="shop-description">
-            Get exclusive Marcus Miller merchandise including vinyl records, apparel, and collectibles.
+            Get exclusive Humphrey Mubba merchandise including vinyl records, apparel, and collectibles.
           </p>
         </div>
 

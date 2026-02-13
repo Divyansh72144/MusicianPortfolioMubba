@@ -9,7 +9,7 @@ const TourSection = () => {
         <div className="tour-image-section">
           <img 
             src="https://static.codia.ai/image/2026-02-11/vzeC6BAVWj.png" 
-            alt="Marcus Miller" 
+            alt="Mubba performing live" 
             className="tour-image"
           />
         </div>
