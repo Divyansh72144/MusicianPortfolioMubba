@@ -8,6 +8,7 @@ const Header = () => {
 
   const navItems = [
     { name: 'HOME', href: '/' },
+    { name: 'MUSIC', href: '/music' },
     { name: 'TOUR', href: '/tour' },
     { name: 'ABOUT', href: '/about' },
     { name: "MUBBA'S GEAR", href: '/gear' },

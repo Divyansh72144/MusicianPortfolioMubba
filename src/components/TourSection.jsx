@@ -1,6 +1,6 @@
 import React from 'react'
 import TourWidget from './TourWidget'
-import mubbaTour2 from '../images/mubbaTour2.png'
+import mubbatourlogo from '../images/mubbalogotour.jpeg'
 import './TourSection.css'
 
 const TourSection = () => {
@@ -9,7 +9,7 @@ const TourSection = () => {
       <div className="tour-container">
         <div className="tour-image-section">
           <img
-            src={mubbaTour2}
+            src={mubbatourlogo}
             alt="Mubba performing live"
             className="tour-image"
           />

@@ -11,12 +11,14 @@ import ContactPage from './components/ContactPage'
 import AboutPage from './components/AboutPage'
 import ShopHero from './components/ShopHero'
 import ShopPage from './components/ShopPage'
+import MusicPage from './components/MusicPage'
 
 // Import optimized WebP images (96% smaller!)
 import mubbaHome from './images/mubbaHome.webp'
 import MubbaAbout from './images/MubbaAbout.webp'
 import MubbaGear from './images/MubbaGear.webp'
 import mubbaTour from './images/mubbaTour.webp'
+import musicPhoto from './images/musicPhoto.jpeg'
 
 // Hidden preloader component - keeps images in DOM cache
 const ImagePreloader = () => {
@@ -118,12 +120,28 @@ const TourPage = () => (
   </div>
 )
 
+const Music = () => (
+  <div className="App">
+    <Header />
+    <main>
+      <PageHero
+        title="MUSIC"
+        backgroundImage={musicPhoto}
+      />
+      <MusicPage />
+      <NewsletterSection />
+      <Footer />
+    </main>
+  </div>
+)
+
 function App() {
   return (
     <>
       <ImagePreloader />
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/music" element={<Music />} />
         <Route path="/tour" element={<TourPage />} />
         <Route path="/about" element={<About />} />
         <Route path="/gear" element={<GearPage />} />

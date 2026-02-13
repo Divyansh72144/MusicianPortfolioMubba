@@ -1,0 +1,203 @@
+.music-section {
+  background-color: #000000;
+  padding: 0;
+}
+
+.music-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.music-content-section {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding: 60px 20px;
+}
+
+.music-heading {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #F2F2F2;
+  text-align: center;
+  margin: 0;
+}
+
+.videos-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px 40px;
+}
+
+.youtube-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.youtube-content {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  width: 100%;
+}
+
+.youtube-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.youtube-title {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #F2F2F2;
+  margin: 0;
+}
+
+.youtube-description {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  color: #F2F2F2;
+  margin: 0;
+}
+
+.youtube-video {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 400px;
+}
+
+.youtube-video iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .videos-list {
+    grid-template-columns: 1fr;
+    gap: 60px 20px;
+  }
+
+  .youtube-content {
+    flex-direction: column;
+  }
+
+  .youtube-text {
+    text-align: center;
+  }
+
+  .social-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-link-card {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.social-links-section {
+  margin-top: 60px;
+}
+
+.social-section-title {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: 0.2px;
+  font-weight: 400;
+  color: #F2F2F2;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.social-links-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.social-link-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.social-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.social-link-card:hover {
+  background-color: #2a2a2a;
+  transform: translateY(-4px);
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.social-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.social-name {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  color: #F2F2F2;
+  margin: 0;
+}
+
+.music-in-africa .social-name {
+  color: #ffffff !important;
+  font-weight: 600;
+}
+
+.social-handle {
+  font-family: 'Zalando Sans Expanded', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #b0b0b0;
+  margin: 0;
+}
+
+@media (max-width: 900px) {
+  .social-links-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .social-link-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
