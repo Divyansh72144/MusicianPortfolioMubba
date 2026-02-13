@@ -1,7 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
-import HeroSection from './components/HeroSection'
 import TourSection from './components/TourSection'
 import NewsletterSection from './components/NewsletterSection'
 import Footer from './components/Footer'
