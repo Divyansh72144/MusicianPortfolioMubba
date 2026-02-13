@@ -1,5 +1,6 @@
 import React from 'react'
 import TourWidget from './TourWidget'
+import mubbaTour2 from '../images/mubbaTour2.png'
 import './TourSection.css'
 
 const TourSection = () => {
@@ -7,9 +8,9 @@ const TourSection = () => {
     <section className="tour-section">
       <div className="tour-container">
         <div className="tour-image-section">
-          <img 
-            src="https://static.codia.ai/image/2026-02-11/vzeC6BAVWj.png" 
-            alt="Mubba performing live" 
+          <img
+            src={mubbaTour2}
+            alt="Mubba performing live"
             className="tour-image"
           />
         </div>

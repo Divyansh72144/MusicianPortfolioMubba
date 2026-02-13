@@ -24,7 +24,7 @@ const HomeContent = () => {
         <div className="content-wrapper">
           <div className="video-container">
             <iframe
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+              src="https://www.youtube.com/embed/f0wxCrTMKh8"
               title="Marcus Miller Video"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -1,4 +1,5 @@
 import React from 'react'
+import mubbaContact from '../images/mubbaContact.jpeg'
 import './ContactPage.css'
 
 const ContactPage = () => {
@@ -27,7 +28,7 @@ const ContactPage = () => {
         {/* Left - Image */}
         <div className="contact-image">
           <img
-            src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=900&fit=crop"
+            src={mubbaContact}
             alt="Mubba"
           />
         </div>

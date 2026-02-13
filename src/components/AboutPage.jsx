@@ -1,4 +1,5 @@
 import React from 'react'
+import mubbasAbout2 from '../images/mubbasAbout2.jpeg'
 import './AboutPage.css'
 
 const AboutPage = () => {
@@ -48,7 +49,7 @@ const AboutPage = () => {
 
           <div className="about-image">
             <img
-              src="https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&q=80"
+              src={mubbasAbout2}
               alt="Mubba performing live"
             />
           </div>
