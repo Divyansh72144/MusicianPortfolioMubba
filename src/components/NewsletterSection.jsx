@@ -7,15 +7,15 @@ const NewsletterSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    // Handle newsletter subscription
-    console.log('Newsletter subscription:', { firstName, email })
+    // Handle newsletter subscription (connect to your email service)
+    alert(`Thank you ${firstName || 'friend'}! You're subscribed.`)
   }
 
   return (
     <section className="newsletter-section">
       <div className="content-wrapper">
         <div className="newsletter-content">
-          <p className="newsletter-title">SUBSCRIBE TO GET UPDATES FROM MARCUS MILLER</p>
+          <p className="newsletter-title">SUBSCRIBE TO GET UPDATES FROM HUMPHREY MUBBA</p>
           
           <div className="newsletter-form-container">
             <form className="newsletter-form" onSubmit={handleSubmit}>

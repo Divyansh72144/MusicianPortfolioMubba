@@ -11,12 +11,12 @@ const ContactPage = () => {
   const socialLinks = [
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/humphrey_mubba?igsh=eTlmeHRyNGptb2pk&utm_source=qr',
+      url: 'https://www.instagram.com/humphrey_mubba',
       handle: '@humphrey_mubba'
     },
     {
       name: 'YouTube',
-      url: 'https://youtube.com/@mubba1577?si=hygIyNF3x0iPPOn6',
+      url: 'https://youtube.com/@mubba1577',
       handle: '@mubba1577'
     }
   ]
