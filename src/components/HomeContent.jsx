@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import TourWidget from './TourWidget'
 import './HomeContent.css'
+import { fetchData } from '../lib/sanityClient'
+import { YELLOW_BOX_QUERY } from '../lib/queries'
 
 const HomeContent = () => {
+  const [yellowBox, setYellowBox] = useState(null)
+
+  useEffect(() => {
+    async function loadYellowBox() {
+      const data = await fetchData(YELLOW_BOX_QUERY)
+      if (data) {
+        setYellowBox(data)
+      }
+    }
+    loadYellowBox()
+  }, [])
+
+  const announcementText = yellowBox?.text || 'New album "Echos from the West" coming soon!'
+
   return (
     <div className="home-content">
       {/* Announcement Section */}
@@ -10,10 +26,10 @@ const HomeContent = () => {
         <div className="content-wrapper">
           <div className="announcement-box">
             <p className="announcement-text">
-              We are reFRESHING our website. Thanks for your patience. Please check back soon
+              We are refreshing our website. Thanks for your patience. Please check back soon
             </p>
             <p className="announcement-highlight">
-              New album "Echos from the West" coming soon!
+              {announcementText}
             </p>
           </div>
         </div>
