@@ -6,7 +6,7 @@ const ContactPage = () => {
   const contactInfo = {
     name: 'Humphrey Mbaruku (Mubba)',
     phone: '+358 40 850 1301',
-    email: 'contact@mubba.com'
+    email: 'hmbaruk@gmail.com'
   }
 
   const socialLinks = [
